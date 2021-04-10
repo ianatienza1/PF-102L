@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<style>
+   
+
+body{
+    background-color :#f0f2f5;
+    font-family: helvetica neue;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  
+  padding: 10px;
+  height: 640px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.button{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+
+}
+table {
+    border-collapse:separate;
+    border:solid black 0px;
+    border-radius:6px;
+    -moz-border-radius:6px;
+}
+td{
+    word-wrap: break-word;
+}
+</style>
+</head>
+<body>
+
+
+ <!-- <div class="row">
+    <div class="column" style="background-color:rgb(84, 191, 226); float :left; width:100%; height: 50px;"
+    <h2>Facebook</h2>
+</div>  -->
+<div class="row">
+  <div class="column" style="background-color:#f0f2f5; width: 55%;padding-left: 15%; padding-right: 5%;">
+    
+    <p style="margin-top: 30%;  color: #1877f2; font-family: helvetica neue; font-size: 350%;"><b> facebook</b></p>
+    <p style="font-size: 200%;">Connect with friends and the world around you on Facebook.</p>
+  </div>
+  <div class="column" style="background-color:#f0f2f5;width: 45%">
+    <center> <br>
+        <font face="helvetica neue">
+            <br><br><br><br><br><br><br>
+            
+            <form method="get" name="Info">
+                <table style="background-color: #ffffff; box-shadow:3px 3px 3px 3px #888888;">
+
+                    <tr>
+                        <br>
+                        <td style="font-size: 150%;"> <input type="text" size="40"  placeholder="Email" >
+                         
+                    </tr>
+                    <tr>
+                        <br>
+                        <td style="font-size: 150%;"> <input type="password" size="40"  placeholder="Password" >
+                         
+                    </tr>
+
+                    <tr>
+                        <td>
+                        <br>
+                            <button class="btn btn-primary btn-block" style="font-size: 150%;">Log In</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 17%; padding-left: 40%;">
+                            <br>
+                            <p><a href="https://www.facebook.com/login/identify/?ctx=recover&ars=facebook_login&from_login_screen=0">Forgot Password?</a></p>
+                            
+                            
+                        </td>
+                    </tr>
+                    
+             
+                    <tr>
+                        <td  style="text-align: center; margin-left: 32%;">
+                            <hr>
+                            
+                               
+                                <!-- Trigger the modal with a button -->
+                                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">Create New Account</button>
+                                <br>
+                                <!-- Modal -->
+                                <div class="modal fade" id="myModal" role="dialog">
+                                  <div class="modal-dialog">
+                                  
+                                    <!-- Modal content-->
+                                    <div class="modal-content">
+                                      <div class="modal-header" style="text-align: left;">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h1 class="modal-title"><b>Sign Up</b></h1>
+                                        <p>It’s quick and easy.</p>
+                                      </div>
+                                      <div class="modal-body">
+
+
+                                        <form method="get" name="Signup">
+                                            <table style="align-content: left">
+                                                <tr>
+                                                    <br>
+                                                    <td style="font-size: 125%"> <input type="text" size="25"  placeholder="First Name" > </td>
+                                                   <td style="font-size: 125%;"> <input type="text" size="25"  placeholder="Last Name" > </td>
+                                                     <br>
+                                                </tr>
+                                                <tr><td><br></td></tr>
+                                             
+                                                <tr>
+                                                    <td colspan="2" style="font-size: 125%;"> <input type="text" size="55"  placeholder="Mobile number or Email" > </td>
+                                                </tr>
+                                                <tr><td><br></td></tr>
+                                                <tr>
+                                                    <td colspan="2" style="font-size: 125%;"> <input type="password" size="55"  placeholder="New Password" > </td>
+                                                </tr>
+                                                <tr><td><br></td></tr>
+                                                <tr>
+                                                    <td style="text-align: left; font-size: 125%;"> Birthday: </td>
+                                                    <td style="text-align: left;">
+                                                <select style="font-size: 150%;" name="month">
+                                                <option> Month
+                                                <option> January
+                                                <option> February
+                                                <option> March
+                                                <option> April
+                                                <option> May
+                                                <option> June
+                                                <option> July
+                                                <option> August
+                                                <option> September
+                                                <option> October
+                                                <option> November
+                                                <option> December
+                                                </select> 
+                                                
+                                                <select style="font-size: 150%;" name="day">
+                                                <option> Day
+                                                <option> 1
+                                                <option> 2
+                                                <option> 3
+                                                <option> 4
+                                                <option> 5
+                                                <option> 6
+                                                <option> 7	
+                                                <option> 8
+                                                <option> 9
+                                                <option> 10
+                                                <option> 11
+                                                <option> 12
+                                                <option> 13
+                                                <option> 14
+                                                <option> 15
+                                                <option> 16
+                                                <option> 17
+                                                <option> 18
+                                                <option> 19
+                                                <option> 20
+                                                <option> 21
+                                                <option> 22
+                                                <option> 23
+                                                <option> 24
+                                                <option> 25
+                                                <option> 26
+                                                <option> 27
+                                                <option> 28
+                                                <option> 29
+                                                <option> 30
+                                                <option> 31
+                                            </select> 
+                                            
+                                            <select style="font-size: 150%;" name="year">
+                                        <option> Year
+                                        <option> 1970
+                                        <option> 1971
+                                        <option> 1972
+                                        <option> 1973
+                                        <option> 1974
+                                        <option> 1975
+                                        <option> 1976
+                                        <option> 1977
+                                        <option> 1978
+                                        <option> 1979
+                                        <option> 1980
+                                        <option> 1981
+                                        <option> 1982
+                                        <option> 1983
+                                        <option> 1984
+                                        <option> 1985
+                                        <option> 1986
+                                        <option> 1987
+                                        <option> 1988
+                                        <option> 1989
+                                        <option> 1990
+                                        <option> 1991
+                                        <option> 1992
+                                        <option> 1993
+                                        <option> 1994
+                                        <option> 1995
+                                        <option> 1996
+                                        <option> 1997
+                                        <option> 1998
+                                        <option> 1999
+                                        <option> 2000
+                                        <option> 2001
+                                        <option> 2002
+                                        <option> 2003
+                                        <option> 2004
+                                        <option> 2005
+                                        <option> 2006
+                                        <option> 2007
+                                        <option> 2008
+                                        <option> 2009
+                                        <option> 2010
+                                        <option> 2011
+                                        <option> 2012 
+                                        <option> 2013
+                                        <option> 2014
+                                        <option> 2015
+                                        <option> 2016
+                                        <option> 2017
+                                        <option> 2018
+                                        <option> 2019
+                                        <option> 2020
+                                            </select>
+                                                    </td>
+                                            </tr>
+                                            <tr><td><br></td></tr>
+                                            
+                                            <tr>
+                                                <td style="text-align: left; font-size: 125%;"> Gender: </td>
+                                                <td colspan="2"> <input type="radio" name="gen"> Male <br>
+                                                     <input type="radio" name="gen"> Female<br>
+                                                     <input type="radio" name="gen"> Custom<br>
+                                                </td>
+                                            </tr>
+                                            <tr><td><br></td></tr>
+                                            <tr>
+                                                <td colspan="2">
+                                                    <p>By clicking Sign Up, you agree to our Terms, Data Policy and Cookies Policy. You may receive SMS Notifications from us and can opt out any time.</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">
+                                                    <button class="btn btn-success btn-primary btn-lg" style="border-radius: 8px; font-size: 150%;">Sign up</button>
+                                                </td>
+                                            </tr>
+                                            </table>
+
+
+                                        </form>
+                                        
+                                      </div>
+                                      
+                                      
+                                    </div>
+                                    
+                                  </div>
+                                </div>
+                                
+                               <br></div></td>
+                    </tr>
+                </table> <br>
+                
+                
+            </form>
+            <p><b>Create a Page</b> for a celebrity, band or business.</p>
+        </font>
+    </center>
+  </div>
+</div>
+
+
+</body>
+</html>
